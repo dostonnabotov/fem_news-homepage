@@ -1,3 +1,68 @@
-body {
-  font-family: cursive;
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/assets/fonts/Inter-VariableFont.ttf") format("truetype");
+}
+
+:root {
+  --clr-primary-hsl-400: 5, 85%, 63%;
+  --clr-secondary-hsl-400: 35, 77%, 62%;
+
+  --clr-primary-400: hsl(var(--clr-primary-hsl-400));
+  --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
+
+  --clr-neutral-100: hsl(36, 100%, 99%);
+  --clr-neutral-200: hsl(233, 8%, 79%);
+  --clr-neutral-400: hsl(236, 13%, 42%);
+  --clr-neutral-900: hsl(240, 100%, 5%);
+
+  --ff-primary: "Inter", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --fs-400: 0.9375rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/**
+ * @see https://andy-bell.co.uk/a-modern-css-reset/
+ */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
