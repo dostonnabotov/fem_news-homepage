@@ -9,6 +9,178 @@
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <a id="skip-nav" class="sr-only sr-only-focusable" href="#main-content">
+        Skip to Content
+      </a>
+      <div class="primary-header container">
+        <a href="/" class="site-logo">
+          <img src="/assets/images/logo.svg" alt="Brand Logo" />
+        </a>
+        <button
+          id="mobile-nav-toggle"
+          class="mobile-nav-toggle"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+          <svg
+            class="open-menu"
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+          <svg
+            class="close-menu"
+            width="32"
+            height="31"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </button>
+        <div id="primary-nav" class="primary-nav" data-visible="false">
+          <ul role="list">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">New</a></li>
+            <li><a class="nav-link" href="#">Popular</a></li>
+            <li><a class="nav-link" href="#">Trending</a></li>
+            <li><a class="nav-link" href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="news">
+      <div class="container">
+        <div class="news-grid">
+          <section class="hero">
+            <div class="hero__img-container">
+              <picture class="hero__img">
+                <source
+                  srcset="/assets/images/image-web-3-desktop.jpg"
+                  media="(min-width: 40em)"
+                />
+                <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="hero__header">
+              <h1 class="site-title">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="hero__content grid-flow" data-spacing="large">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a class="button" href="#">Read more</a>
+            </div>
+          </section>
+
+          <aside class="new grid-flow" data-spacing="large">
+            <h2 class="section-title clr-secondary-400">New</h2>
+            <div class="new__cards grid-flow" data-spacing="large">
+              <article class="card grid-flow">
+                <h3 class="card-title">Hydrogen VS Electric Cars</h3>
+                <p class="card-description">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+              <article class="card grid-flow">
+                <h3 class="card-title">The Downsides of AI Artistry</h3>
+                <p class="card-description">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <article class="card grid-flow">
+                <h3 class="card-title">Is VC Funding Drying Up?</h3>
+                <p class="card-description">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </div>
+          </aside>
+
+          <section class="popular">
+            <h2 class="section-title sr-only">Popular</h2>
+            <div class="popular-cards">
+              <div class="popular-card card">
+                <div class="card-img-container">
+                  <img
+                    class="card-img"
+                    src="/assets/images/image-retro-pcs.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="popular-card__content grid-flow"
+                  data-spacing="small"
+                >
+                  <h3 class="card-title">
+                    <span class="popular-card__number">01</span>
+                    Reviving Retro PCs
+                  </h3>
+                  <p class="card-description">
+                    What happens when old PCs are given modern upgrades?
+                  </p>
+                </div>
+              </div>
+              <div class="popular-card card">
+                <div class="popular-card__img-container card-img-container">
+                  <img
+                    class="popular-card__img card-img"
+                    src="/assets/images/image-top-laptops.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="popular-card__content grid-flow"
+                  data-spacing="small"
+                >
+                  <h3 class="card-title">
+                    <span class="popular-card__number">02</span>
+                    Top 10 Laptops of 2022
+                  </h3>
+                  <p class="card-description">
+                    Our best picks for various needs and budgets.
+                  </p>
+                </div>
+              </div>
+              <div class="popular-card card">
+                <div class="card-img-container">
+                  <img
+                    class="card-img"
+                    src="/assets/images/image-gaming-growth.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="popular-card__content grid-flow"
+                  data-spacing="small"
+                >
+                  <h3 class="card-title">
+                    <span class="popular-card__number">03</span>
+                    The Growth of Gaming
+                  </h3>
+                  <p class="card-description">
+                    How the pandemic has sparked fresh opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
