@@ -59,127 +59,125 @@
       </div>
     </header>
 
-    <main class="news">
-      <div class="container">
-        <div class="news-grid">
-          <section class="hero">
-            <div class="hero__img-container">
-              <picture class="hero__img">
-                <source
-                  srcset="/assets/images/image-web-3-desktop.jpg"
-                  media="(min-width: 40em)"
-                />
-                <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
-              </picture>
-            </div>
-            <div class="hero__header">
-              <h1 class="site-title">The Bright Future of Web 3.0?</h1>
-            </div>
-            <div class="hero__content grid-flow" data-spacing="large">
+    <main>
+      <div class="container main-grid">
+        <section class="hero">
+          <div class="hero__img-container">
+            <picture class="hero__img">
+              <source
+                srcset="/assets/images/image-web-3-desktop.jpg"
+                media="(min-width: 40em)"
+              />
+              <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+            </picture>
+          </div>
+          <div class="hero__header">
+            <h1 class="site-title">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="hero__content grid-flow" data-spacing="large">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a class="button" href="#">Read more</a>
+          </div>
+        </section>
+
+        <aside class="new grid-flow" data-spacing="large">
+          <h2 class="section-title">New</h2>
+          <ul role="list" class="new__cards grid-flow" data-spacing="large">
+            <li class="grid-flow">
+              <h3 class="card-title">
+                <a href="#">Hydrogen VS Electric Cars</a>
+              </h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+
+            <li class="grid-flow">
+              <h3 class="card-title">
+                <a href="#">The Downsides of AI Artistry</a>
+              </h3>
               <p>
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
+                What are the possible adverse effects of on-demand AI image
+                generation?
               </p>
-              <a class="button" href="#">Read more</a>
-            </div>
-          </section>
+            </li>
 
-          <aside class="new grid-flow" data-spacing="large">
-            <h2 class="section-title clr-secondary-400">New</h2>
-            <div class="new__cards grid-flow" data-spacing="large">
-              <article class="card grid-flow">
-                <h3 class="card-title">Hydrogen VS Electric Cars</h3>
-                <p class="card-description">
-                  Will hydrogen-fueled cars ever catch up to EVs?
-                </p>
-              </article>
-              <article class="card grid-flow">
-                <h3 class="card-title">The Downsides of AI Artistry</h3>
-                <p class="card-description">
-                  What are the possible adverse effects of on-demand AI image
-                  generation?
-                </p>
-              </article>
-              <article class="card grid-flow">
-                <h3 class="card-title">Is VC Funding Drying Up?</h3>
-                <p class="card-description">
-                  Private funding by VC firms is down 50% YOY. We take a look at
-                  what that means.
-                </p>
-              </article>
-            </div>
-          </aside>
+            <li class="grid-flow">
+              <h3 class="card-title">
+                <a href="#">Is VC Funding Drying Up?</a>
+              </h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ul>
+        </aside>
 
-          <section class="popular">
-            <h2 class="section-title sr-only">Popular</h2>
-            <div class="popular-cards">
-              <div class="popular-card card">
-                <div class="card-img-container">
+        <section class="popular">
+          <h2 class="section-title | sr-only">Popular</h2>
+          <ol
+            role="list"
+            class="popular-cards | grid-flow"
+            data-spacing="large"
+          >
+            <li>
+              <article class="popular-card | grid-flow">
+                <div class="popular-card__img-wrapper">
                   <img
-                    class="card-img"
+                    class="popular-card__img"
                     src="/assets/images/image-retro-pcs.jpg"
-                    alt=""
+                    alt="an old PC"
                   />
                 </div>
-                <div
-                  class="popular-card__content grid-flow"
-                  data-spacing="small"
-                >
-                  <h3 class="card-title">
-                    <span class="popular-card__number">01</span>
-                    Reviving Retro PCs
+                <div class="grid-flow" data-spacing="small">
+                  <h3 class="popular-card__title card-title">
+                    <a href="#">Reviving Retro PCs</a>
                   </h3>
-                  <p class="card-description">
-                    What happens when old PCs are given modern upgrades?
-                  </p>
+                  <p>What happens when old PCs are given modern upgrades?</p>
                 </div>
-              </div>
-              <div class="popular-card card">
-                <div class="popular-card__img-container card-img-container">
+              </article>
+            </li>
+
+            <li>
+              <article class="popular-card | grid-flow">
+                <div class="popular-card__img-wrapper">
                   <img
-                    class="popular-card__img card-img"
+                    class="popular-card__img"
                     src="/assets/images/image-top-laptops.jpg"
-                    alt=""
+                    alt="a keyboard"
                   />
                 </div>
-                <div
-                  class="popular-card__content grid-flow"
-                  data-spacing="small"
-                >
-                  <h3 class="card-title">
-                    <span class="popular-card__number">02</span>
-                    Top 10 Laptops of 2022
+                <div class="grid-flow" data-spacing="small">
+                  <h3 class="popular-card__title card-title">
+                    <a href="">Top 10 Laptops of 2022</a>
                   </h3>
-                  <p class="card-description">
-                    Our best picks for various needs and budgets.
-                  </p>
+                  <p>Our best picks for various needs and budgets.</p>
                 </div>
-              </div>
-              <div class="popular-card card">
-                <div class="card-img-container">
+              </article>
+            </li>
+
+            <li>
+              <article class="popular-card | grid-flow">
+                <div class="popular-card__img-wrapper">
                   <img
-                    class="card-img"
+                    class="popular-card__img"
                     src="/assets/images/image-gaming-growth.jpg"
-                    alt=""
+                    alt="a game controller"
                   />
                 </div>
-                <div
-                  class="popular-card__content grid-flow"
-                  data-spacing="small"
-                >
-                  <h3 class="card-title">
-                    <span class="popular-card__number">03</span>
-                    The Growth of Gaming
+                <div class="grid-flow" data-spacing="small">
+                  <h3 class="popular-card__title card-title">
+                    <a href="#">The Growth of Gaming</a>
                   </h3>
-                  <p class="card-description">
-                    How the pandemic has sparked fresh opportunities.
-                  </p>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
+              </article>
+            </li>
+          </ol>
+        </section>
       </div>
     </main>
   </body>
