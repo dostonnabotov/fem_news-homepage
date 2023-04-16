@@ -1,14 +1,14 @@
 const navToggleBtn = document.getElementById("mobile-nav-toggle");
-const navContainerElem = document.getElementById("primary-nav");
+const primaryNavElem = document.getElementById("primary-nav");
 
 navToggleBtn.addEventListener("click", () => {
-  const isVisible = navContainerElem.dataset.visible;
+  const isVisible = primaryNavElem.dataset.visible;
 
   if (isVisible === "false") {
-    navContainerElem.setAttribute("data-visible", "true");
-    navToggleBtn.setAttribute("aria-expanded", "true");
+    primaryNavElem.dataset.visible = true;
+    navToggleBtn.setAttribute("aria-expanded", true);
   } else {
-    navContainerElem.setAttribute("data-visible", "false");
-    navToggleBtn.setAttribute("aria-expanded", "false");
+    primaryNavElem.dataset.visible = false;
+    navToggleBtn.setAttribute("aria-expanded", false);
   }
 });
